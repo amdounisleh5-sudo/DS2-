@@ -16,7 +16,8 @@ jobs:
 
       - name: Build Docker Image
         
-        run: docker build -t my-website:latest "./my website"
+        run: docker build -t my-website:latest "./- name: Build Docker Image
+        run: docker build -t my-website:latest ./my_website"
 
       - name: Test Docker Container
         run: |
