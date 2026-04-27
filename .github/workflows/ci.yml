@@ -11,16 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
       - name: Build Docker Image
-        
-        run: docker build -t my-website:latest "./- name: Build Docker Image
-        run: docker build -t my-website:latest ./my_website"
+       
+        run: docker build -t my-website:latest ./my_website
 
       - name: Test Docker Container
         run: |
+          # تأكد إنّ اسم الـ image هو نفسه اللي عملنا له build فوق
           docker run -d -p 80:80 --name test-container my-website:latest
           sleep 5
           docker ps | grep test-container
