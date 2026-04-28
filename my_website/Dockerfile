@@ -1,5 +1,5 @@
 FROM nginx:alpine
 
-COPY index.html style.css app.js image/Logo-min-ESB-HUU.png /usr/share/nginx/html/
+COPY index.html style.css app.js image/ /usr/share/nginx/html/
 
 EXPOSE 80
