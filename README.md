@@ -33,7 +33,7 @@ Lancer le projet avec Docker Compose :
 Bash
 
 docker-compose up -d
-Le site sera accessible sur : http://localhost:8080 
+Le site sera accessible sur : http://localhost:8081
 
 
 Structure du Projet :
