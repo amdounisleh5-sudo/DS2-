@@ -1,9 +1,5 @@
-FROM alpine:latest
+FROM nginx:alpine
 
-COPY . /app
-
-WORKDIR /app
+COPY . /usr/share/nginx/html
 
 EXPOSE 80
-
-CMD ["httpd", "-f", "-h", "/app"]
