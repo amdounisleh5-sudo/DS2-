@@ -1,6 +1,7 @@
+FROM alpine:latest
 
-FROM httpd:2.4
+COPY . /app
 
-COPY . /usr/local/apache2/htdocs/
+WORKDIR /app
 
 EXPOSE 80
